@@ -1,16 +1,16 @@
 // fonts
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Bad+Script);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic);
 
 // styles
 body {
     background-color: #2d2d2d;
     h1 {
-    color: whitesmoke;
+    color: #82E6FF;
     margin-top: 15%;
     text-align: center;
-    font-family: 'Montserrat';
-    font-size:26pt;
+    font-family: 'Bad Script';
+    font-size:38pt;
     margin-bottom: 100px;
     text-align: center;
     }
@@ -32,7 +32,6 @@ body {
         color: #82E6FF;
         font-size: 20px;
         padding: 10px 35px 10px 35px;
-        border: solid black 1px;
         text-decoration: none;
         &:hover {
             background: #3cb0fd;

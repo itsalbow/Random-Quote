@@ -1,22 +1,31 @@
 // variables for json data to store after ajax call
-var authors;
+var quotes = [];
 
 
 // ready
 $(document).ready(function(){
     
-    var getQuotes = (function(){
-        $.ajax({
-            url: 'http://itsalbow.github.io/js/quotes.json',
-            dataType: "JSON",
-            success: function(data){
-                return JSON.parse(data);
-            }
-        });
-    })();
+    // Ajax request
+    $.getJSON( 'http://itsalbow.github.io/js/quotes.json', function( data ){
+        
+        // pull JSON data and save in quotes array
+        $.each(data.quotes, function(index) {
+            quotes.push(data.quotes[index]);
+        });// end loop
+    }).done(function(){ console.log( "Be doin thangz." ) }).fail(function(){ console.log( "getJSON failed") });
+    // end getJSON
     
-    var quotes = getQuotes;
+    $('.btn').click(function( e ) {
+        var r = random();
+        e.preventDefault();
+        $('h2').html(quotes[r].quote);
+        $('h3').html(quotes[r].author);
+    });// end click
+        
     
-    console.log(quotes)
-    
-});
+});// end document ready
+
+// random num
+var random = function() {
+    return Math.round( Math.random() * 18) + 0;
+}
