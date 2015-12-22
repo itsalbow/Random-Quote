@@ -1,5 +1,6 @@
-// variables for json data to store after ajax call
-var quotes = [];
+
+var quotes = []; // array for json data to store after ajax call
+var oldQuote; // old random number
 
 
 // ready
@@ -16,16 +17,28 @@ $(document).ready(function(){
     // end getJSON
     
     $('.btn').click(function( e ) {
-        var r = random();
+        var r = random(oldQuote);
         e.preventDefault();
-        $('h2').html(quotes[r].quote);
-        $('h3').html(quotes[r].author);
+ 
+        $('#quote-machine').fadeOut(600, function(){
+            $(this).fadeIn(1000);
+            $('h2').html(quotes[r].quote);
+            $('h3').html(quotes[r].author);
+        });
+        
+        oldQuote = r;
     });// end click
         
     
 });// end document ready
 
-// random num
-var random = function() {
-    return Math.round( Math.random() * 18) + 0;
-}
+// random num function
+var random = function( old ) {
+    var rand = Math.round( Math.random() * 18) + 0;
+   
+    // recurion to make sure not the same quote
+    if( old != rand )
+        return rand;
+    else
+        return random( old );
+}// end 
