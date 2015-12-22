@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Bad+Script);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic);
-body { background-color: #2d2d2d; }
+body { background-color: #2d2d2d; padding: 0 25px; }
 
 body h1 { color: #82E6FF; margin-top: 15%; text-align: center; font-family: 'Bad Script'; font-size: 38pt; margin-bottom: 100px; text-align: center; }
 
@@ -20,6 +20,4 @@ body .buttonDiv .btn:active { color: #8DEFFF; background: #3cb0fd; background-im
 
 #quote-machine { background-image: url("../images/Quote.png"); background-repeat: no-repeat; background-position: 20px 20px; background-size: 60px auto; overflow: hidden; padding: 10px 70px; }
 
-footer { position: absolute; bottom: 0; right: 5%; width: 100%; font-family: 'Bad Script'; font-size: 16pt; text-align: right; color: #AAA; }
-
-
+footer { display: inline-block; bottom: 0; margin-top: 100px; width: 100%; font-family: 'Bad Script'; font-size: 16pt; text-align: right; color: #AAA; }

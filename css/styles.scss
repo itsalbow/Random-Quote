@@ -5,6 +5,7 @@
 // styles
 body {
     background-color: #2d2d2d;
+    padding: 0 25px;
     h1 {
     color: #82E6FF;
     margin-top: 15%;
@@ -82,9 +83,10 @@ body {
 }
 
 footer{
-    position: absolute;
+    display: inline-block;
     bottom: 0;
-    right: 5%;
+    margin-top: 100px;
+    
     width: 100%;
     font-family: 'Bad Script';
     font-size: 16pt;
