@@ -12,9 +12,22 @@ html
             #quote-machine
                 h2 Press X to reload.
                 h3 - Abraham Lincoln
-        footer
-            p Alec Armstrong                    
-        script(src="/js/jquery.min.js")
-        script(src="/js/quotes.js")       
+
+    footer
+        p Alec Armstrong
+        span#tweet-span
+            a.twitter-share-button(
+				id="tweet"
+		        href="https://twitter.com/share"
+                data-size="large"
+                data-url = "https//itsalbow.github.io/quotes"
+		        data-via="Al_Armz"
+                data-related="twitterapi,twitter"
+		        data-count="none"
+                data-hashtags="freecodecamp"
+                data-text=""
+		    )   Tweet   
+        script(src='/js/jquery.min.js')
+        script(src='/js/quotes.js')
     //- end body
 //- end html

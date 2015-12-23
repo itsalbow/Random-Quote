@@ -4,11 +4,11 @@
 
 // styles
 body {
+    padding: 50px;
     background-color: #2d2d2d;
-    padding: 0 25px;
     h1 {
     color: #82E6FF;
-    margin-top: 15%;
+    margin-top: 2%;
     text-align: center;
     font-family: 'Bad Script';
     font-size:38pt;
@@ -66,15 +66,17 @@ body {
     h2 {
     color: #004047;
     font-style: italic;
-    font-size: 20pt
+    font-size: 26pt
     } 
     h3 {
     color: #004047;
+    font-size: 16pt;
     }
 }
 
 #quote-machine{
-    background-image: url('../images/Quote.png');
+    text-align: left;
+    background-image: url('https://raw.githubusercontent.com/itsalbow/Random-Quote/master/images/Quote.png');
     background-repeat: no-repeat;
     background-position: 20px 20px;
     background-size: 60px auto;
@@ -85,13 +87,14 @@ body {
 footer{
     display: inline-block;
     bottom: 0;
-    margin-top: 100px;
-    
+    margin-top: 0;
     width: 100%;
     font-family: 'Bad Script';
     font-size: 16pt;
-    text-align: right;
+    text-align: center;
     color: #AAA;
-    
+    margin-bottom: 0;
+    height: 0;
 }
+
 
